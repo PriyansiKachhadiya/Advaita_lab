@@ -1,0 +1,143 @@
+main {
+  display: flex;
+  /* font-size: 1.2vw; */
+  margin-bottom: 10%;
+}
+
+.contact1,
+.contact2 {
+  width: 50%;
+  padding: 5%;
+}
+.contact1  h2{
+  margin-top: 2%;
+  margin-bottom: 2.5%;
+}
+.contact1 p{
+  margin-bottom: 1.5%;
+}
+
+.contact2 form #formpart1,
+.contact2 form #formpart2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10%;
+  row-gap: 10%;
+  margin-bottom: 10%;
+  /* font-size: 1.2vw; */
+} 
+.contact2 form #formpart2 {
+  grid-template-columns: auto;
+}
+.contact2 form input::placeholder {
+  font-size: 1.2vw;
+}
+.contact2 form div {
+  display: flex;
+  flex-direction: column;
+}
+#formpart1 div input {
+  width: 100%;
+  padding: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+#formpart1 div input:focus {
+  outline: none;
+}
+
+.contact2 ul li {
+  list-style: none;
+}
+.telbox .selectbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.selectbox select {
+  width: 36%;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#procat div ul,
+#relate div ul,
+#launch_15_days div ul {
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  
+}
+#procat div ul {
+  padding-top: 2.5%;
+  padding-bottom: 6%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#procat div ul li label input,
+#relate div ul li label input,
+#launch_15_days div ul li label input {
+  width: 10%;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#formpart1 div label,
+#formpart2 div label {
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+#procat div ul li label,
+#relate div ul li label,
+#launch_15_days div ul li label {
+  font-weight: 400;
+}
+#formpart2 button{
+    padding-top:2% ;
+    padding-bottom:2% ;
+    background-color: #1b4bbc;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+@media all and (max-width: 1000px){
+  .contact1,
+.contact2 {
+  width: 100%;
+
+}
+}
+@media all and (max-width: 700px){
+  .contact2 form #formpart1,
+.contact2 form #formpart2 {
+ 
+  grid-template-columns: auto ;
+  column-gap: 0%;
+  row-gap: 5%;
+  margin-bottom: 35%;
+
+  
+} 
+.contact2 form input::placeholder {
+  font-size: 3vw;
+}
+
+
+}

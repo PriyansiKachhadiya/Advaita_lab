@@ -158,6 +158,7 @@ header {
   grid-column: 1/4;
 }
 
+#consulting_content div h5,
 #solutions_content div h3,
 #Blockchain_content div h3
 ,#about-us_content div h3 {
@@ -459,6 +460,7 @@ footer div li:hover {
   }
 }
 
+
 /* Base font size and line-height using vw */
 body {
   font-size: 3vw; /* Example base size, adjust as needed */
@@ -480,16 +482,14 @@ h3 {
   font-size: 3.5vw;
   line-height: 1.4;
 }
-h4,
-h5 {
+h4
+ {
   font-size: 3vw;
   line-height: 1.4;
 }
-
-/* Small text */
-.small-text {
-  font-size: 2vw;
-  line-height: 1.6;
+h5{
+  font-size: 2.5vw;
+  line-height: 1.5;
 }
 .main21 img,
 .main22 img {
@@ -500,6 +500,10 @@ h5 {
   width: 6vw;
   margin-right: 8vw;
 }
+
+
+
+
 
 /* Media queries for finer control */
 @media (min-width: 600px) {
@@ -515,21 +519,21 @@ h5 {
     font-size: 3.5vw;
     line-height: 1.3;
   }
-  h3,
-  h4,
-  h5 {
+  h3
+  {
     font-size: 3vw;
     line-height: 1.4;
   }
-  h4,
-  h5 {
+  h4
+   {
     font-size: 2.5vw;
-    line-height: 1.4;
+    line-height: 1.5;
   }
-  .small-text {
-    font-size: 1.8vw;
+  h5{
+    font-size: 2vw;
     line-height: 1.6;
   }
+
 }
 
 @media (min-width: 900px) {
@@ -549,16 +553,17 @@ h5 {
     font-size: 2.5vw;
     line-height: 1.4;
   }
-  h4,
-  h5 {
+  h4
+  {
     font-size: 1.5vw;
-    line-height: 1.4;
+    line-height: 1.5;
   }
-
-  .small-text {
-    font-size: 1.5vw;
+  h5{
+    font-size: 1.2vw;
     line-height: 1.6;
   }
+
+
   .main21 img,
   .main22 img {
     width: 17vw;
@@ -572,7 +577,7 @@ h5 {
 
 @media (min-width: 1200px) {
   body {
-    font-size: 1.5vw; /* Smaller scaling for large desktops */
+    font-size: 1.2vw; /* Smaller scaling for large desktops */
     line-height: 1.5;
   }
   h1 {
@@ -583,18 +588,25 @@ h5 {
     font-size: 2.5vw;
     line-height: 1.3;
   }
-  h3,
-  h4,
-  h5 {
-    font-size: 1.5vw;
+  h3
+   {
+    font-size: 2vw;
     line-height: 1.4;
   }
-  .small-text {
+  h4{
+    font-size: 1.5vw;
+    line-height: 1.5;
+  }
+  h5{
     font-size: 1.2vw;
     line-height: 1.6;
   }
+
   .socialMedia_sites img {
     width: 3vw;
     margin-right: 5vw;
   }
 }
+
+
+
